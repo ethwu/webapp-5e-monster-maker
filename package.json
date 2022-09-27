@@ -1,6 +1,11 @@
 {
   "name": "giffyglyphs_monster_maker",
   "version": "2.0.1",
+  "overrides": {
+    "node-sass": {
+      "sass": "^1.55.0"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
@@ -10,14 +15,15 @@
     "gulp": "^4.0.2",
     "gulp-beautify": "^3.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-using": "^0.1.1",
+    "handlebars": "^4.7.7",
     "minimist": "^1.2.0",
     "require-dir": "^1.2.0",
+    "sass": "^1.55.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
-  },
-  "dependencies": {}
+  }
 }

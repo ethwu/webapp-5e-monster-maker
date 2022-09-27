@@ -10,7 +10,13 @@ const source = require("vinyl-source-stream");
 const buffer = require("vinyl-buffer");
 const uglify = require("gulp-uglify");
 let sourcemaps = require('gulp-sourcemaps');
-let sass = require('gulp-sass');
+
+// Use dart-sass instead of the deprecated node-sass.
+const dartSass = require('sass');
+const gulpSass = require('gulp-sass');
+const sass = gulpSass(dartSass);
+
+// let sass = require('gulp-sass');
 let rename = require('gulp-rename');
 var exec = require('child_process').exec;
 let del = require('del');
